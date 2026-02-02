@@ -1,8 +1,7 @@
 """
-marching_cubes_mc33_skimage.py
+marching_cubes_33_skimage.py
 
-Marching Cubes 33 (Lewiner) surface extraction using scikit-image
-on CT-ORG anatomical segmentations.
+Marching Cubes 33 (Lewiner) surface extraction using scikit-image on CT-ORG segmentations.
 
 Dataset (not included in repo):
 https://www.cancerimagingarchive.net/collection/ct-org/
@@ -25,18 +24,14 @@ import matplotlib.pyplot as plt
 from skimage import measure
 
 
-# ============================================================
-# Configuration
-# ============================================================
+# ------- Configuration ------
 
-LABEL_PATH = "path/to/labels-1.nii.gz"   # <-- CHANGE THIS
+LABEL_PATH = "path/to/labels-1.nii.gz"   # CHANGE THIS
 ISO_VALUE = 0.5
 BACKGROUND_LABEL = 0
 
 
-# ============================================================
-# Utilities
-# ============================================================
+# ------- Utilities -------
 
 def load_nifti_labels(path):
     """Load NIfTI label volume."""
@@ -49,9 +44,6 @@ def load_nifti_labels(path):
 def extract_surface_mc33(mask, spacing, iso_value=0.5):
     """
     Extract surface using Marching Cubes 33 (Lewiner).
-
-    scikit-image uses the Lewiner algorithm by default,
-    which resolves topological ambiguities (MC33).
     """
     verts, faces, normals, _ = measure.marching_cubes(
         mask,
@@ -67,10 +59,6 @@ def extract_surface_mc33(mask, spacing, iso_value=0.5):
 
     return pv.PolyData(verts, faces_pv)
 
-
-# ============================================================
-# Main
-# ============================================================
 
 def main():
 
@@ -120,7 +108,7 @@ def main():
     plotter.add_axes()
     plotter.show(title="Marching Cubes 33 (Lewiner)")
 
-    print("\n=== Summary ===")
+    print("\n ------- Summary ------")
     for lbl, tris in triangle_counts.items():
         print(f"Label {lbl}: {tris} triangles")
     print(f"Total triangles: {sum(triangle_counts.values())}")
