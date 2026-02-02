@@ -3,7 +3,7 @@ import time
 
 from datasets import choose_data_set
 from metrics import compute_hausdorff_distance, compute_assd
-from marchingCubesPrototype import marching_cubes
+from marching_cubes import marching_cubes
 from visualization import run_interactive_viewer
 
 
