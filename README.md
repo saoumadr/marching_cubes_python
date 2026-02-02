@@ -5,7 +5,7 @@ This repository contains an implementation of the **Marching Cubes (MC)** algori
 - Synthetic datasets (sphere, torus, ellipsoid, cube, cone)
 - Evaluation of reconstructed surfaces using **Hausdorff Distance** and **Average Symmetric Surface Distance (ASSD)**
 - Interactive 3D visualization with adjustable isolevels
-- Application to real-world CT volumes (bladder, liver, lungs, kidneys, skeleton)
+- Application to real-world CT volumes (bladder, liver, lungs, kidneys, skeleton) using the scikit-image implementation.
 - Discussion of limitations and modern variants of Marching Cubes
 
 ---
