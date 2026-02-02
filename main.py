@@ -9,7 +9,7 @@ from visualization import run_interactive_viewer
 
 # -----------DATASET------------
 DATASET = "sphere"   # "sphere", "torus", "ellipsoid", "cube", "cone"
-n = 2**7             # grid resolution
+n = 2**4            # grid resolution
 
 volume, isolevel_init, gt_points = choose_data_set(DATASET, n)
 
