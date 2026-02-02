@@ -1,4 +1,5 @@
 import numpy as np
+
 def choose_data_set(DATASET, n, n_samples=5000):
     """
     Generate the 3d grid and ground truth surface samples for a given shape.
