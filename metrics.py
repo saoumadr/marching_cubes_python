@@ -1,8 +1,6 @@
 import numpy as np
 from scipy.spatial.distance import directed_hausdorff
 from scipy.spatial import cKDTree
-from mpl_toolkits.mplot3d.art3d import Poly3DCollection
-
 
 
 def compute_hausdorff_distance(points_a, points_b):
