@@ -11,7 +11,7 @@ The repository includes:
 - Experimental comparison with modern implementations on real CT scans
 - Discussion of limitations and variants of the algorithm
 
-<img src="images/demo.gif" width="500">
+  <img src="images/skeleton.gif" width="400">
 
 ---
 
@@ -21,7 +21,7 @@ The repository includes:
 - [Dataset](#dataset)
 - [Results](#results)
 - [Limitations](#limitations)
-- [Modern Variants](#modern-variants)
+- [Variants](#variants)
 - [Usage](#usage)
 
 ---
