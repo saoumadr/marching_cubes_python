@@ -37,7 +37,7 @@ pip install -r requirements.txt
 
 Additional dependencies required to run the experimental scripts are listed in:
 ```bash
-pip install -r requirements-experiments.txt
+pip install -r requirements_experiments.txt
 ```
 ---
 
